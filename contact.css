@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a0b2e; /* Dark purple background */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Styling with Background Image */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('black2.jpg'); /* Purple-themed header background image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 24px; /* Adjust to match the text size */
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Navigation Styling */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Underline Animation for Links */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1ed760;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link:hover {
+    color: #1ed760;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a0b2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #1ed760;
+}
+
+/* Main Content Section */
+main {
+    background-color: #2a1a46; /* Slightly lighter purple for content area */
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/* Contact Page Specific Styles */
+
+/* Owner Info Section */
+#owner-info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.owner-photo img {
+    width: 200px;  /* Adjust size of the photo */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff; /* Border around the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Owner Details Section */
+#owner-details {
+    background-color: #2a1a46;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 20px;
+    text-align: center;
+}
+
+#owner-details h2 {
+    color: #c299ff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#owner-details p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #1ed760;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+/* Reflection Section */
+#reflection {
+    background-color: #2a1a46;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 20px;
+    text-align: center;
+}
+
+#reflection h2 {
+    color: #c299ff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#reflection p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #owner-details {
+        padding: 20px;
+    }
+
+    #owner-details h2 {
+        font-size: 28px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-link {
+        font-size: 16px;
+    }
+}

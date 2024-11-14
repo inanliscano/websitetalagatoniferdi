@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a0b2e; 
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('black2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 24px; 
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1ed760;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link:hover {
+    color: #1ed760;
+}
+
+
+/* Main Content Section */
+main {
+    background-color: #2a1a46;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+h2 {
+    color: #c299ff; 
+}
+
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #2a1a46;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.feature {
+    background-color: #3c2461;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex: 1 1 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #d1a3ff; 
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+
+#tutorial-list {
+    background-color: #2a1a46; 
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px;
+}
+
+#tutorial-list h2 {
+    color: #c299ff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#tutorial-list p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.tutorial-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tutorial-card {
+    background-color: #3c2461;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tutorial-card h3 {
+    font-size: 24px;
+    color: #d1a3ff; 
+    margin-bottom: 10px;
+}
+
+.tutorial-card h3 a {
+    color: #d1a3ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tutorial-card h3 a:hover {
+    color: #1ed760;  
+}
+
+.tutorial-card p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.tutorial-card:hover {
+    transform: translateX(55px);
+}
+
+
+footer {
+    background-color: #1a0b2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #1ed760;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #features, .tutorial-card-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
