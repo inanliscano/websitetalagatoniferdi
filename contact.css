@@ -128,15 +128,15 @@ main {
     background-color: #2a1a46;
     padding: 40px 20px;
     border-radius: 12px;
-    margin: 20px;
-    text-align: center;
-    object-fit: cover;
+    margin: -10px;
+    text-align: left;
 }
 
 #owner-details h2 {
     color: #c299ff;
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #owner-details p {
