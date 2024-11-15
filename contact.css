@@ -126,10 +126,10 @@ main {
 /* Owner Details Section */
 #owner-details {
     background-color: #2a1a46;
-    padding: 40px 20px;
+    padding: 50px 25px;
     border-radius: 12px;
     margin: 2px;
-    text-align: left;
+    text-align: center;
 }
 
 #owner-details h2 {
