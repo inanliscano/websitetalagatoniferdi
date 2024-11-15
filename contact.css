@@ -126,9 +126,9 @@ main {
 /* Owner Details Section */
 #owner-details {
     background-color: #2a1a46;
-    padding: 50px 25px;
+    padding: 40px 20px;
     border-radius: 12px;
-    margin: 2px;
+    margin: 10px;
     text-align: left;
 }
 
