@@ -129,14 +129,13 @@ main {
     padding: 50px 25px;
     border-radius: 12px;
     margin: 2px;
-    text-align: center;
+    text-align: left;
 }
 
 #owner-details h2 {
     color: #c299ff;
     font-size: 36px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 #owner-details p {
@@ -149,7 +148,7 @@ main {
 .social-links {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
 }
 
